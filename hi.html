@@ -1,0 +1,44 @@
+<html>
+    {% load static %}
+<head>
+<title>
+hi</title>
+</head>
+<body style="background-color: aqua;" ,>
+    <table>
+        {% if Perdata %}
+        {%  for  per_data in Perdata %}
+
+            <tr><td>Name</td><td>{{Per_data.Name}}   </td></tr>
+            <tr><td>Father_Name</td><td>{{per_data.Father_Name}}</td></tr>
+            <tr><td>Mother_Name</td><td>{{per_data.Mother_Name}}</td></tr>
+            <tr><td>DateOfBirth</td><td>{{per_data.DateOfBirth}} </td></tr>
+            <tr><td>Native_District</td><td> {{per_data.Native_District}} </td></tr>
+            <tr><td>Martial_status</td><td> {{per_data.Martial_status}} </td></tr>
+            <tr><td>Language_known</td><td> {{per_data.Language_known}} </td></tr>
+            <tr><td>Higher_Qualification</td><td> {{per_data.Higher_Qualification}} </td></tr>
+            <tr><td>Project</td><td> {{per_data.Project}} </td></tr>
+            <tr><td>Permanaent_address</td><td> {{per_data.Permanaent_address}} </td></tr>
+            <tr><td>phone_number</td><td> {{per_data.phone_number}} </td></tr>
+            <tr><td>EmailID</td><td> {{per_data.EmailID}} </td></tr>
+
+        {% endfor %}
+{% endif %}    
+
+       
+        
+
+
+    
+ 
+ 
+ 
+  
+
+
+
+</table>
+
+
+</body>
+</html>
